@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <div class="information">
+        <img src="news.jpg">
+        <div class="publishedAt">Published At: <span>2024-05-25T13:05:00Z</span></div>
+        <div class="boxing">
+            <div class="source">Source Name: <span>Gizmodo.com</span></div>
+            <div class="author">Author: Justin Carter<span></span></div>
+            <div class="title">Ghost in the Shell Returns With a New Anime in 2026</div>
+            <div class="description">Description: <span>Ghost in the Shell is making a comeback, courtesy of a brand-new anime by Scott Pilgrim Takes Off studio Science SARU and longtime franchise studio Production I.G (Kaiju No. 8).</span></div>
+            <a href="" class="url">Read more....</a>
+            <div class="content">Content: <span>Ghost in the Shellis making a comeback, courtesy of a brand-new anime by Scott Pilgrim Takes Off studio Science SARU and longtime franchise studio Production I.G (Kaiju No. 8).\r\nRevealed on Saturday … [+1597 chars]</span></div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".publishedAt span").innerText=localStorage.getItem('publishedAt');
+        document.querySelector(".source span").innerText=localStorage.getItem('source');
+        document.querySelector(".author span").innerText=localStorage.getItem('author');
+        document.querySelector(".title").innerText = localStorage.getItem('sharedText');
+        document.querySelector(".description").innerText=localStorage.getItem('description');
+        document.querySelector(".content span").innerText=localStorage.getItem('content');
+        document.querySelector(".information img").src=localStorage.getItem('information');
+        document.querySelector(".url").href=localStorage.getItem('url');
+    </script>
+</body>
+</html>
