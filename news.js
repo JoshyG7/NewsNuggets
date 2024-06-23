@@ -3,6 +3,9 @@
     let headingSearch=document.querySelector(".heading input");
     let searchButton=document.querySelector(".searchButton");
     let resultInfo= document.querySelector(".result span");
+    let heading=document.querySelector(".heading");
+    let result=document.querySelector(".result");
+    let watherImage=document.querySelector(".watherImage");
 
 
 
@@ -10,11 +13,15 @@
     let i=0,j=8,d;
     let infoName="india";
     let title;
+    heading.style.visibility = "hidden";
+    result.style.visibility = "hidden";
+    info.style.visibility = "hidden";
+    moreInfo.style.visibility = "hidden";
     function showData(){
         if(j<=d){
-        while(i<j){
+        while(i < j && i < data.articles.length){
             info.innerHTML+=`<div class="box">
-            <img src="${data.articles[i].urlToImage }">
+            <img src="${data.articles[i].image}">
             <h1>${data.articles[i].title}</h1><br>
             <p style="color: rgb(177, 94, 209);">Source: ${data.articles[i].source.name}</p>
             </div>`;    
@@ -25,13 +32,23 @@
     }else{
         alert("There is no Further Information.");
     }
+    watherImage.style.visibility = "hidden";
+    heading.style.visibility = "visible";
+    result.style.visibility = "visible";
+    info.style.visibility = "visible";
+    moreInfo.style.visibility = "visible";
     }
     const getInto=async()=>{
-        searchUrl=`https://newsapi.org/v2/everything?q=${infoName}&apiKey=b51eadf3a9784964bde4f16f4503b3b6`;
+    watherImage.style.visibility = "visible";
+    heading.style.visibility = "hidden";
+    result.style.visibility = "hidden";
+    info.style.visibility = "hidden";
+    moreInfo.style.visibility = "hidden";
+        searchUrl=`https://gnews.io/api/v4/search?q=${infoName}&token=47e0c51ee200bce2ff8b8203cb090099`;
         let respone= await fetch(searchUrl);
         data=await respone.json();
         d=data.articles.length;
-        resultInfo.innerText=data.totalResults; 
+        resultInfo.innerText=data.articles.length-2; 
         showData();
     }
     getInto();
@@ -51,7 +68,7 @@
             localStorage.setItem('sharedText', data.articles[index].title);
             localStorage.setItem("description",data.articles[index].description);
             localStorage.setItem("content",data.articles[index].content);
-            localStorage.setItem("information",data.articles[index].urlToImage);
+            localStorage.setItem("information",data.articles[index].image);
                 localStorage.setItem("url",data.articles[index].url);
                 window.location.href = 'newsInfo.html';
         });
