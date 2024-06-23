@@ -50,7 +50,7 @@ body{
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 6);
     border-radius: 30px;
     width: 262px;
-    height: 300px;
+    height: 350px;
     display: inline-block;
     margin-left: 20px;
     margin-top: 20px;
@@ -71,7 +71,7 @@ body{
     display: inline-block;
     color: white;
     left: 10px;
-    top: 260px;
+    top: 297px;
 }
 .box img{
     width: 260px;
@@ -98,7 +98,7 @@ body{
     font-weight: bolder;
     cursor: pointer;
     margin-bottom: 50px;
-    margin-top: 100px;
+    margin-top: 160px;
 }
 .moreInfo button:hover{
     background-color: white;
@@ -187,4 +187,21 @@ body{
     /* font-weight: bolder; */
     font-size: 23px;
     margin-top: 31px;
+}
+.watherImage img{
+    position: fixed;
+    top: 20px;
+    left: 530px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 15px;
+}
+.watherImage h1{
+    position: fixed;
+    top: 200px;
+    left: 534px;
+    font-size: 35px;
+    color: white;
 }
