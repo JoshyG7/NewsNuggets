@@ -19,6 +19,7 @@
     moreInfo.style.visibility = "hidden";
     function showData(){
         if(j<=d){
+            if(i<8){
         while(i < j && i < data.articles.length){
             info.innerHTML+=`<div class="box">
             <img src="${data.articles[i].image}">
@@ -27,7 +28,17 @@
             </div>`;    
             i++;
         }
-        j+=8;
+        j+=2;
+    }else if(i==8){
+        while(i < j && i < data.articles.length){
+            info.innerHTML+=`<div class="box">
+            <img src="${data.articles[i].image}">
+            <h1>${data.articles[i].title}</h1><br>
+            <p style="color: rgb(177, 94, 209);">Source: ${data.articles[i].source.name}</p>
+            </div>`;    
+            i++;
+        }
+    }
         getclick();
     }else{
         alert("There is no Further Information.");
@@ -48,7 +59,7 @@
         let respone= await fetch(searchUrl);
         data=await respone.json();
         d=data.articles.length;
-        resultInfo.innerText=data.articles.length-2; 
+        resultInfo.innerText=data.articles.length; 
         showData();
     }
     getInto();
