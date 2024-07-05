@@ -5,22 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="heading">
         <h1>News<span>Nuggets</span></h1>
         <input type="search" placeholder="Search any News or Article....">
-        <button class="searchButton">Search</button>
+        <button class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
+    
+
     <div class="result">Total Results: <span></span></div>
 
     <div class="info"></div>
     <div class="moreInfo">
         <button>Click here for More Information</button>
     </div>
-    <div class="watherImage"><img src="news.jpg">
+    <div class="watherImage" style="visibility: hidden;"><img src="news.jpg">
     <h1>Loading.....</h1></div>
+
     <!-- <div class="info">Stay informed with NewsNuggets.com, your go-to source for quick and insightful summaries of the latest articles and news. Our dedicated team curates and distills complex stories into bite-sized nuggets, making it easy for you to stay updated on the most important topics of the day. Whether you're looking for breaking news, in-depth analysis, or trending articles, we've got you covered. Dive in, stay informed, and never miss a beat with NewsNuggets.com.</div> -->
+
+    <div class="information" style="visibility: hidden;">
+        <img src="news.jpg"><br>
+        <div class="publishedAt">Published At: <span>2024-05-25T13:05:00Z</span></div>
+        <div class="boxing">
+            <div class="source">Source Name: <span>Gizmodo.com</span></div>
+            <div class="author">Author: Justin Carter<span></span></div>
+            <div class="title">Ghost in the Shell Returns With a New Anime in 2026</div>
+            <div class="description">Description: <span>Ghost in the Shell is making a comeback, courtesy of a brand-new anime by Scott Pilgrim Takes Off studio Science SARU and longtime franchise studio Production I.G (Kaiju No. 8).</span></div>
+            <a href="" class="url">Read more....</a>
+            <div class="content">Content: <span>Ghost in the Shellis making a comeback, courtesy of a brand-new anime by Scott Pilgrim Takes Off studio Science SARU and longtime franchise studio Production I.G (Kaiju No. 8).\r\nRevealed on Saturday … [+1597 chars]</span></div>
+        </div>
+        <div class="remove">X</div>
+    </div>
+
+    <div class="Categories"><h3>Click a Categories to get the Article:</h3>
+        <ul>
+            <li class="item">Politics</li>
+            <li class="item">Business</li>
+            <li class="item">Technology</li>
+            <li class="item">Sports</li>
+            <li class="item">Entertainment</li>
+            <li class="item">Health</li>
+            <li class="item">Science</li>
+            <li class="item">Innovations and Startups</li>
+            <li class="item">Environmental</li>
+            <li class="item">Travel and Adventure</li>
+            <li class="item">Arts and Culture</li>
+            <li class="item">Education and Careers</li>
+            <li class="item">Lifestyle and Wellness</li>
+            <li class="item">Opinion and Editorials</li>
+            <li class="item">History and Heritage</li>
+            <li class="item">Tech and Gadget Reviews</li>
+            <li class="item">Science Fiction and Future Trends</li>
+            <li class="item">Social Issues</li>
+            <li class="item">Youth and Education</li>
+            <li class="item">Art and Design</li>
+            <li class="item">Book and Movie Reviews</li>
+            <li class="item">Local Events and Festivals</li>
+            <li class="item">Personal Finance</li>
+            <li class="item">Quizzes and Fun Facts</li>
+            <li class="item">DIY and Hobbies</li>
+            <li class="item">Gaming and E-Sports</li>
+        </ul>
+    </div>
+    <div class="AdditionalFeatures">
+        <button class="Additional">Additional Features <i class="fa-solid fa-caret-down"></i></button>
+        <ul class="showing">
+        <li class="item1">National News</li>
+        <li class="item1">International News</li>
+        <li class="item1">Weather Updates</li>
+        <li class="item1">Live Updates</li>
+        <li class="item1">Archives</li>
+        <li class="item1">Social Media Integration</li> 
+        <li class="item1">Top Stories</li>
+        </ul>
+    </div>
+    <div class="AboutandContact">
+        <button class="about">About and Contact <i class="fa-solid fa-caret-down"></i></button>
+        <ul class="showing">
+        <li class="item2">About Us</li>
+        <li class="item2">Contact</li>
+        </ul>
+    </div>
+
+    <div class="aboutUS" style="visibility: hidden;">
+        <div class="removeFromAbourt">X</div>
+        <p>Welcome to NewsNuggets, your go-to source for comprehensive and diverse news coverage. We strive to keep you informed, entertained, and engaged with the latest happenings across a wide range of topics. Our mission is to deliver timely and accurate news, insightful articles, and thought-provoking content that caters to the varied interests and passions of our readers.
+        <br>Our categories include:
+        <ul>
+            <li>National News:Stay updated with the latest developments, stories, and events happening across the nation. Our National News section covers a wide range of topics, including government policies, political events, economic updates, social issues, and more. </li>
+            <li>International News:Explore the global landscape with our International News coverage. We bring you news from around the world, highlighting key events, international politics, economic trends, cultural happenings, and major incidents.</li>
+            <li>Health: Find articles on health tips, medical research, wellness trends, and fitness advice.</li>
+            <li>Science: Explore scientific discoveries, research breakthroughs, and fascinating facts about our universe.</li>
+            <li>Innovations and Startups: Learn about cutting-edge innovations, emerging startups, and entrepreneurial success stories.</li>
+            <li>Environmental: Stay informed on environmental issues, climate change, sustainability, and conservation efforts.</li>
+            <li>Travel and Adventure: Get inspired by travel guides, adventure stories, and tips for your next trip.</li>
+            <li>Lifestyle and Wellness: Read about lifestyle trends, self-care tips, and ways to enhance your overall well-being.</li>
+            <li>Opinion and Editorials: Engage with diverse perspectives and thought-provoking editorials on current issues.</li>
+            <li>History and Heritage: Learn about historical events, cultural heritage, and significant milestones that shaped our world.</li>
+            <li>Tech and Gadget Reviews: Find reviews, comparisons, and news on the latest gadgets and technology products.</li>
+            <li>Science Fiction and Future Trends: Explore speculative fiction, futuristic trends, and imaginative concepts shaping our future.</li>
+            <li>Social Issues: Understand social challenges, advocacy, and movements making a difference in our society.</li>
+        </ul>
+        <p>At NewsNuggets, we are committed to providing a platform where readers can find reliable information, diverse viewpoints, and engaging content. Join us on this journey to stay informed, inspired, and connected to the world around you.</p>
+    </div>
+
+    <div class="contactUs" style="visibility: hidden;">
+        <div class="removeFromContact">X</div>
+        <p>We value your feedback, questions, and suggestions. Here’s how you can reach us:</p>
+        <div class="headInfo">
+            <h5>General Inquiries</h5>
+            <p>For any general questions or comments, please email us at: <span>info@yournewswebsite.com</span></p>
+        </div>
+        <div class="headInfo">
+            <h5>Editorial Team</h5>
+            <p>Got a story idea, news tip, or press release? Contact our editorial team at:  <span>editor@yournewswebsite.com</span></p>
+        </div>
+        <div class="headInfo">
+            <h5>Advertising</h5>
+            <p>Interested in advertising with us? Get in touch with our advertising team at: <span>advertising@yournewswebsite.com</span></p>
+        </div>
+        <div class="headInfo">
+            <h5>Technical Support</h5>
+            <p>Experiencing issues with our website? Reach out to our technical support team at: <span>support@yournewswebsite.com</span></p>
+        </div>
+        <div class="headInfo">
+            <h5>Social Media</h5>
+            <p>Connect with us on social media for the latest updates and news:</p>
+            <ul>
+               <a href=""><li class="clickBal">Facebook</li></a>
+               <a href=""><li class="clickBal">Twitter</li></a>
+               <a href=""><li class="clickBal">Instagram</li></a>
+               <a href=""><li class="clickBal">LinkedIn</li></a>
+            </ul>
+        </div>
+        <div class="headInfo">
+            <h5>Office Address</h5>
+            <p>NewsNuggets,<br>Solan, Himachal Pradesh,173211<br>India</p>
+        </div>
+        <div class="headInfo">
+            <h5>Business Hours</h5>
+            <p>Our team is available during the following hours:</p>
+            <ul>
+                <li>Monday to Friday: 9:00 AM - 6:00 PM</li>
+                <li>Saturday: 10:00 AM - 4:00 PM</li>
+                <li>Sunday: Closed</li>
+            </ul>
+        </div>
+        <div class="headInfo">
+            <h5>Feedback and Suggestions</h5>
+            <p>We appreciate your feedback and suggestions to improve our website and services. Please send your thoughts to: <span>feedback@yournewswebsite.com</span></p></div>
+    </div>
     <script src="news.js"></script>
 </body>
 </html>
