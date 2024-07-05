@@ -1,14 +1,17 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif, 'Times New Roman', Times, serif;
+}
 body{
     background-color: rgba(24, 25, 29, 0.978);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Times New Roman', Times, serif;
 }
 .heading{
     background-color: rgb(18, 18, 37);
     height: 60px;
-    width: 100%;
+    width: 98%;
     margin-top: 22px;
     color: white;
     margin-top: -22px;
+
 }
 .heading span{
     color: rgb(177, 94, 209);
@@ -21,8 +24,8 @@ body{
 .heading input, .heading button{
     position: relative;
     top: -46px;
-    left: 770px;
-    width: 300px;
+    left: 836px;
+    width: 270px;
     height: 37px;
     border-radius: 10px;
     border: solid 1px white;
@@ -31,11 +34,12 @@ body{
     font-weight: bolder;
 }
 .heading button{
-    width: 100px;
+    width: 80px;
     cursor: pointer;
     color: white;
     font-size: 20px;
     background-color: rgb(177, 94, 209);
+    width: 50px;
 }
 .heading button:hover{
     background-color: white;
@@ -52,7 +56,7 @@ body{
     width: 262px;
     height: 350px;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -87,7 +91,7 @@ body{
     top: 10px;
 }
 .moreInfo button{
-    width: 100%;
+    width: 73%;
     height: 37px;
     border-radius: 40px;
     border: solid 1px white;
@@ -108,34 +112,44 @@ body{
     height: 20px;
     display: inline-block;
     color: white;
+    width: 73%;
 }
 .information{
-    display: inline-block;
+    position: absolute;
+    top: 40px;
+    width: 94%;
+    margin-left: 10px;  
+    border: 8px solid white;
+    border-radius: 8px;
+    backdrop-filter:  blur(4px);
+    background-color: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 6);
+    height: 500px;
 }
 .information img{
     width: 440px;
     height: 290px;
     position: relative;
-    top: 50px;
+    top: 20px;
     left: 18px;
     border: solid 2px black;
     border-radius: 20px;
 }
 .boxing{
     /* background-color: rgba(0, 255, 255, 0.342); */
-    width: 700px;
-    height: 380px;
+    width: 660px;
     position: relative;
-    top: -270px;
     left: 480px;
+    top: -274px;
+    
 }
 .publishedAt{
     color: white;
     font-size: 23px;
-    position: relative;
-    top: 50px;
+    position: absolute;
+    top: 320px;
     left: 24px;
-    /* font-weight: bolder; */
+    display: inline-block;
 }
 .source,.author{
     display: inline-block;
@@ -182,6 +196,26 @@ body{
 .url:hover{
     background-color: white;
 }
+.remove,.removeFromAbourt,.removeFromContact{
+    width: 60px;
+    background-color: rgb(177, 94, 209);
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    position: absolute;
+    top: -38px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 2px solid white;
+    right: -50px;
+    cursor: pointer;
+}
+.remove:hover,.removeFromAbourt:hover,.removeFromContact:hover{
+    background-color: white;
+    color: black;
+}
 .content{
     color: white;
     /* font-weight: bolder; */
@@ -190,8 +224,8 @@ body{
 }
 .watherImage img{
     position: fixed;
-    top: 20px;
-    left: 530px;
+    top: 30%;
+    left: 30%;
     width: 200px;
     height: 200px;
     background-color: white;
@@ -200,8 +234,114 @@ body{
 }
 .watherImage h1{
     position: fixed;
-    top: 200px;
-    left: 534px;
+    top: 63%;
+    left: 31%;
     font-size: 35px;
     color: white;
+}
+.Categories{
+    width: 23%;
+    position: absolute;
+    top: 60px;
+    right: 33px;
+    height: 90%;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding-left: 10px;
+    font-weight: lighter;
+    overflow: auto;
+}
+.Categories li{
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 10px;
+    /* list-style: none; */
+}
+.Categories li:hover{
+    background-color: rgb(129, 126, 126);
+}
+.Additional, .about{
+    width: 213px;
+    height: 40px;
+    color: white;
+    background-color: rgb(18, 18, 37);
+    border: 3px solid black;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 300px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.about{
+    left: 570px;
+}
+.AdditionalFeatures ul,.AboutandContact ul{
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    font-weight: lighter;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    color: white;
+    list-style: none;
+}
+.AboutandContact ul{
+    left: 570px;
+    width: 193px;
+}
+.AdditionalFeatures li,.AboutandContact li{
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.AdditionalFeatures li:hover,.AboutandContact li:hover{
+    background-color: rgb(129, 126, 126);
+}
+.showing{
+    visibility: hidden;
+}
+.aboutUS, .contactUs{
+    width: 90%;
+    border: 9px solid white;
+    position: absolute;
+    left: 3%;
+    top: 8%;
+    color: white;
+    backdrop-filter:  blur(4px);
+    background-color: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 6);
+}
+.aboutUS p,.contactUs p{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.headInfo h5{
+    margin-bottom: -8px;
+    font-weight: bolder;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: -14px;
+    color: rgb(177, 94, 209);
+}
+.headInfo span,.clickBal{
+    color: rgb(0, 102, 255);
+}
+.headInfo ul{
+    margin-top: -20px;
+}
+.headInfo li{
+    font-size: 20px;
+    padding-top: 2px;
 }
