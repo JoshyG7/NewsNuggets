@@ -13,23 +13,14 @@
 
     let data;
     let i=0,j=6,d;
-    let infoName="naruto";
+    let infoName="India";
     let title;
     result.style.visibility = "hidden";
     info.style.visibility = "hidden";
     moreInfo.style.visibility = "hidden";
     function showData(){
         if(j<=d){
-            if(i<6){
-                while(i < j && i < data.articles.length){
-                    info.innerHTML+=`<div class="box">
-                    <img src="${data.articles[i].image}">
-                    <h1>${data.articles[i].title}</h1><br>
-                    <p style="color: rgb(177, 94, 209);">Source: ${data.articles[i].source.name}</p>
-                    </div>`;    
-                    i++;
-                }
-    }else if(i>=6){
+            if(i<8){
         while(i < j && i < data.articles.length){
             info.innerHTML+=`<div class="box">
             <img src="${data.articles[i].image}">
@@ -38,16 +29,35 @@
             </div>`;    
             i++;
         }
-        j=data.data.length;
+    }else if(i==8){
+        while(i < j && i < data.articles.length){
+            info.innerHTML+=`<div class="box">
+            <img src="${data.articles[i].image}">
+            <h1>${data.articles[i].title}</h1><br>
+            <p style="color: rgb(177, 94, 209);">Source: ${data.articles[i].source.name}</p>
+            </div>`;    
+            i++;
+        }
     }
     j+=2;
-    console.log(j);
-        getclick();
+    getclick();
+    }else if(d<6 && i < d-1){
+        while(i < j && i < data.articles.length){
+            info.innerHTML+=`<div class="box">
+            <img src="${data.articles[i].image}">
+            <h1>${data.articles[i].title}</h1><br>
+            <p style="color: rgb(177, 94, 209);">Source: ${data.articles[i].source.name}</p>
+            </div>`;    
+            i++;
+        }
+        j+=2;
+    getclick();
     }
     else{
         alert("There is no Further Information.");
     }
     watherImage.style.visibility = "hidden";
+    heading.style.visibility = "visible";
     result.style.visibility = "visible";
     info.style.visibility = "visible";
     moreInfo.style.visibility = "visible";
@@ -57,7 +67,9 @@
     result.style.visibility = "hidden";
     info.style.visibility = "hidden";
     moreInfo.style.visibility = "hidden";
-        searchUrl=`https://gnews.io/api/v4/search?q=${infoName}&token=47e0c51ee200bce2ff8b8203cb090099`;
+        searchUrl=`https://gnews.io/api/v4/search?q=${infoName}&token=6d2c278d922f01429e4c0b8ac46bd336`;
+        // 6d2c278d922f01429e4c0b8ac46bd336
+        // 47e0c51ee200bce2ff8b8203cb090099
         let respone= await fetch(searchUrl);
         data=await respone.json();
         d=data.articles.length;
