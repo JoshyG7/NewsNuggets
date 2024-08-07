@@ -5,13 +5,13 @@ body{
     background-color: rgba(24, 25, 29, 0.978);
 }
 .heading{
+    position: relative;
     background-color: rgb(18, 18, 37);
     height: 60px;
     width: 98%;
     margin-top: 22px;
     color: white;
     margin-top: -22px;
-
 }
 .heading span{
     color: rgb(177, 94, 209);
@@ -54,11 +54,31 @@ body{
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 6);
     border-radius: 30px;
     width: 20vw;
-    height: 350px;
+    height: 380px;
     display: inline-block;
     margin-left: 2vw;
     margin-top: 20px;
     cursor: pointer;
+}
+.box button{
+    border: 0.2vw solid black;
+    font-size: 1.2vw;
+    border-radius: 6px;
+    height: 2.5vw;
+    width: 12vw;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1vw;
+    left: 4vw;
+    font-weight: bold;
+    background-color: rgb(177, 94, 209);
+    color: white;
+    border: 0.2vw solid white;
+}
+.box button:hover{
+    background-color: white;
+    color: black;
+    border: 0.2vw solid black;
 }
 .box h1{
     position: absolute;
@@ -68,14 +88,16 @@ body{
     left: 4px;
     top: 210px;
     font-weight: lighter;
+    text-align: center;
 }
 .box p{
-    position: absolute;
+    position: relative;
     font-size: 15px;
-    display: inline-block;
+    /* display: inline-block; */
     color: white;
-    left: 10px;
-    top: 297px;
+    /* left: 3vw; */
+    top: 5vw;
+    text-align: center;
 }
 .box img{
     width: 19.7vw;
@@ -240,7 +262,7 @@ body{
     color: white;
 }
 .Categories{
-    width: 23%;
+    width: 24vw;
     position: absolute;
     top: 60px;
     right: 33px;
