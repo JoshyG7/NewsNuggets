@@ -7,63 +7,62 @@ body{
 .heading{
     position: relative;
     background-color: rgb(18, 18, 37);
-    height: 60px;
-    width: 98%;
-    margin-top: 22px;
+    height: 6vw;
+    width: 97.5vw;
+    margin-top: 2.2vw;
     color: white;
-    margin-top: -22px;
+    margin-top: -2.2vw;
 }
 .heading span{
     color: rgb(177, 94, 209);
 }
 .heading h1{
     position: relative;
-    left: 30px;
-    top: 10px;
+    left: 2.3vw;
+    top: 1vw;
+    font-size: 2.6vw;
 }
 .heading input, .heading button{
     position: relative;
-    top: -46px;
-    left: 836px;
-    width: 270px;
-    height: 37px;
-    border-radius: 10px;
+    top: -4vw;
+    left: 70vw;
+    width: 21vw;
+    height: 3vw;
+    border-radius: 1vw;
     border: solid 1px white;
-    padding-left: 10px;
+    padding-left: 1vw;
     color: black;
     font-weight: bolder;
+    font-size: 1vw;
 }
 .heading button{
-    width: 80px;
+    width: 8vw;
     cursor: pointer;
     color: white;
-    font-size: 20px;
+    font-size: 2vw;
     background-color: rgb(177, 94, 209);
-    width: 50px;
+    width: 4.3vw;
 }
 .heading button:hover{
     background-color: white;
     color: black;
 }
-.info{
-    margin-left: 5px;
-}
 .box{
     background-color: rgba(110, 110, 110, 0.25);
     backdrop-filter: blur(4px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 6);
-    border-radius: 30px;
+    box-shadow: 0 0.8vw 3.2vw 0 rgba(0, 0, 0, 6);
+    border-radius: 3vw;
     width: 20vw;
-    height: 380px;
+    height: 31vw;
     display: inline-block;
     margin-left: 2vw;
-    margin-top: 20px;
+    margin-top: 1.4vw;
     cursor: pointer;
 }
 .box button{
     border: 0.2vw solid black;
-    font-size: 1.2vw;
-    border-radius: 6px;
+    font-size: 1vw;
+    border-radius: 2vw;
     height: 2.5vw;
     width: 12vw;
     cursor: pointer;
@@ -82,156 +81,137 @@ body{
 }
 .box h1{
     position: absolute;
-    font-size: 16px;
+    font-size: 1.4vw;
     display: inline-block;
     color: white;
-    left: 4px;
-    top: 210px;
+    top: 16.6vw;
     font-weight: lighter;
     text-align: center;
 }
 .box p{
     position: relative;
-    font-size: 15px;
+    font-size: 1.3vw;
     /* display: inline-block; */
     color: white;
     /* left: 3vw; */
-    top: 5vw;
+    top: 4.5vw;
     text-align: center;
 }
 .box img{
     width: 19.7vw;
-    height: 210px;
-    border-radius: 5px;
+    height: 17vw;
+    border-radius: 1vw;
     border: solid 2px black;
 }
 .result{
     color: white;
-    margin-left: 30px;
-    font-size: 28px;
+    margin-left: 2.6vw;
+    font-size: 2vw;
     position: relative;
-    top: 10px;
-}
-.moreInfo button{
-    width: 73%;
-    height: 37px;
-    border-radius: 40px;
-    border: solid 1px white;
-    padding-left: 10px;
-    color: white;   
-    font-size: 23px;
-    background-color: rgb(177, 94, 209);
-    font-weight: bolder;
-    cursor: pointer;
-    margin-bottom: 50px;
-    margin-top: 160px;
-}
-.moreInfo button:hover{
-    background-color: white;
-    color: black;
+    top: 1vw;
+    display: inline-block;
 }
 .info{
-    height: 20px;
+    height: 2vw;
     display: inline-block;
     color: white;
-    width: 73%;
+    width: 71vw;
 }
 .information{
     position: absolute;
-    top: 40px;
-    width: 94%;
-    margin-left: 10px;  
-    border: 8px solid white;
+    top: 4vw;
+    width: 91.7vw;
+    margin-left: 1vw;  
+    border: 0.7vw solid white;
     border-radius: 8px;
     backdrop-filter:  blur(4px);
     background-color: rgba(110, 110, 110, 0.25);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 6);
-    height: 600px;
+    height: 52vw;
 }
 .information img{
-    width: 440px;
-    height: 290px;
+    width: 36vw;
+    height: 29vw;
     position: relative;
-    top: 20px;
-    left: 18px;
-    border: solid 2px black;
-    border-radius: 20px;
+    top: 2vw;
+    left: 1.3vw;
+    border: solid 0.2vw black;
+    border-radius: 1vw;
 }
 .boxing{
     /* background-color: rgba(0, 255, 255, 0.342); */
-    width: 660px;
-    position: relative;
-    left: 480px;
-    top: -274px;
-    
+    width: 52vw;
+    position: absolute;
+    left: 38.5vw;
+    top: 2vw;
 }
 .publishedAt{
     color: white;
-    font-size: 23px;
-    position: absolute;
-    top: 320px;
-    left: 24px;
+    font-size: 1.9vw;
+    position: relative;
+    top: 2vw;
+    left: 2vw;
     display: inline-block;
 }
 .source,.author{
     display: inline-block;
     color: white;
-    font-size: 20px;
-    font-weight: bolder;
+    font-size: 1.6vw;
+    font-weight: lighter;
 }
 .author{
-    margin-left: 40px;
+    margin-left: 4vw;
 }
 .title{
     color: rgb(177, 94, 209);
     font-weight: bolder;
-    font-size: 31px;
-    margin-top: 10px;
+    font-size: 2.3vw;
+    margin-top: 1vw;
 }
 .description{
     color: white;
-    /* font-weight: bolder; */
-    font-size: 23px;
+    font-weight: lighter;
+    font-size: 2vw;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 .url{
-    width: 150px;
-    height: 60px;
+    width: 15vw;
+    height: 6vw;
     cursor: pointer;
     color: white;
-    font-size: 20px;
+    font-size: 1.8vw;
     background-color: rgb(177, 94, 209);
-    border-radius: 10px;
+    border-radius: 2vw;
     border: solid 1px white;
     color: black;
     font-weight: bolder;
-    margin-top: 18px;
+    margin-top: 1.8vw;
     text-decoration: none;
-    top: 10px;
+    top: 1vw;
     position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 .url:hover{
     background-color: white;
 }
 .remove,.removeFromAbourt,.removeFromContact{
-    width: 60px;
+    width: 5vw;
     background-color: rgb(177, 94, 209);
     color: white;
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 2.4vw;
+    font-weight: lighter;
     position: absolute;
-    top: -38px;
+    top: -2.8vw;
     border-radius: 50%;
     text-align: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border: 2px solid white;
-    right: -50px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border: 0.2vw solid white;
+    right: -3.4vw;
     cursor: pointer;
 }
 .remove:hover,.removeFromAbourt:hover,.removeFromContact:hover{
@@ -241,91 +221,98 @@ body{
 .content{
     color: white;
     /* font-weight: bolder; */
-    font-size: 23px;
-    margin-top: 31px;
+    font-size: 1.8vw;
+    margin-top: 3vw;
 }
 .watherImage img{
     position: fixed;
-    top: 30%;
-    left: 30%;
-    width: 200px;
-    height: 200px;
+    top: 15vw;
+    left: 30vw;
+    width: 20vw;
+    height: 20vw;
     background-color: white;
-    border: solid 2px black;
+    border: solid 0.2vw black;
     border-radius: 15px;
 }
 .watherImage h1{
     position: fixed;
-    top: 63%;
-    left: 31%;
-    font-size: 35px;
+    top: 34vw;
+    left: 30.5vw;
+    font-size: 2vw;
     color: white;
 }
 .Categories{
-    width: 24vw;
-    position: absolute;
-    top: 60px;
-    right: 33px;
-    height: 90%;
+    width: 23vw;
+    position: sticky;
+    top: 0.1vw;
+    float: right;
+    height: 50vw;
     background-color: black;
-    border-radius: 5px;
+    border-radius: 0.5vw;
     color: white;
-    padding-left: 10px;
+    padding-left: 0.9vw;
     font-weight: lighter;
-    overflow: auto;
+    overflow: scroll;
+    margin-bottom: -11vw;
+}
+.Categories h3{
+    font-size: 1.7vw;
+}
+.Categories ul{
+    padding-left: 1.5vw;
 }
 .Categories li{
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 1.2vw;
+    font-size: 1.7vw;
     cursor: pointer;
-    padding-left: 10px;
+    padding-left: 1vw;
     /* list-style: none; */
 }
 .Categories li:hover{
     background-color: rgb(129, 126, 126);
 }
 .Additional, .about{
-    width: 213px;
-    height: 40px;
+    width: 18vw;
+    height: 3vw;
     color: white;
     background-color: rgb(18, 18, 37);
-    border: 3px solid black;
-    font-size: 20px;
+    border: 1.5px solid black;
+    font-size: 1.7vw;
     position: absolute;
-    top: 10px;
-    left: 300px;
+    top: 1vw;
+    left: 24vw;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 1vw;
 }
 .about{
-    left: 570px;
+    left: 47vw;
 }
 .AdditionalFeatures ul,.AboutandContact ul{
     background-color: black;
     display: inline-block;
     position: absolute;
-    top: 30px;
-    left: 300px;
+    top: 3vw;
+    left: 24.3vw;
     font-weight: lighter;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 20px;
+    padding-left: 0.1vw;
+    /* padding-right: 1vw; */
+    font-size: 1.7vw;
     text-align: center;
     cursor: pointer;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
     cursor: pointer;
     color: white;
     list-style: none;
 }
 .AboutandContact ul{
-    left: 570px;
-    width: 193px;
+    left: 47vw;
+    width: 16.5vw;
 }
 .AdditionalFeatures li,.AboutandContact li{
     list-style: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
 }
 .AdditionalFeatures li:hover,.AboutandContact li:hover{
     background-color: rgb(129, 126, 126);
@@ -334,36 +321,37 @@ body{
     visibility: hidden;
 }
 .aboutUS, .contactUs{
-    width: 90%;
-    border: 9px solid white;
+    width: 91vw;
+    border: 0.3vw solid white;
     position: absolute;
-    left: 3%;
-    top: 8%;
+    left: 3vw;
+    top: 4vw;
     color: white;
     backdrop-filter:  blur(4px);
     background-color: rgba(110, 110, 110, 0.25);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 6);
+    padding-right: 1vw;
 }
 .aboutUS p,.contactUs p{
-    font-size: 20px;
-    margin-left: 10px;
-    margin-top: 8px;
+    font-size: 1.6vw;
+    margin-left: 1vw;
+    margin-top: 0.8vw;
 }
 .headInfo h5{
-    margin-bottom: -8px;
+    margin-bottom: 0.1vw;
     font-weight: bolder;
-    margin-left: 10px;
-    font-size: 20px;
-    margin-top: -14px;
+    margin-left: 1vw;
+    font-size: 1.6vw;
+    margin-top: 0.1vw;
     color: rgb(177, 94, 209);
 }
 .headInfo span,.clickBal{
     color: rgb(0, 102, 255);
 }
 .headInfo ul{
-    margin-top: -20px;
+    margin-top: -2vw;
 }
 .headInfo li{
-    font-size: 20px;
-    padding-top: 2px;
+    font-size: 1.6vw;
+    padding-top: 0.2vw;
 }
