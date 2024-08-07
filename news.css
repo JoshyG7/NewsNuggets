@@ -53,10 +53,10 @@ body{
     backdrop-filter: blur(4px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 6);
     border-radius: 30px;
-    width: 262px;
+    width: 20vw;
     height: 350px;
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 2vw;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -78,7 +78,7 @@ body{
     top: 297px;
 }
 .box img{
-    width: 260px;
+    width: 19.7vw;
     height: 210px;
     border-radius: 5px;
     border: solid 2px black;
