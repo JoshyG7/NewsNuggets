@@ -19,6 +19,7 @@ result.style.visibility = "hidden";
 info.style.visibility = "hidden";
 
 function showData(){
+    info.innerHTML = '';
     for(let i=0;i<d;i++){
         info.innerHTML+=`<div class="box">
         <img src="${data.articles[i].image}">
@@ -37,7 +38,8 @@ const getInto=async()=>{
 watherImage.style.visibility = "visible";
 result.style.visibility = "hidden";
 info.style.visibility = "hidden";
-    searchUrl=`https://gnews.io/api/v4/search?q=${infoName}&token=6d2c278d922f01429e4c0b8ac46bd336`;
+try{
+    searchUrl=`https://gnews.io/api/v4/search?q=${infoName}&token=47e0c51ee200bce2ff8b8203cb090099`;
     // 6d2c278d922f01429e4c0b8ac46bd336
     // 47e0c51ee200bce2ff8b8203cb090099
     let respone= await fetch(searchUrl);
@@ -45,6 +47,13 @@ info.style.visibility = "hidden";
     d=data.articles.length;
     resultInfo.innerText=data.articles.length;
     showData();
+}catch{
+    alert("We don't have info about this topic");
+    watherImage.style.visibility = "hidden";
+heading.style.visibility = "visible";
+result.style.visibility = "visible";
+info.style.visibility = "visible";
+}
 }
 getInto();
 
@@ -76,7 +85,6 @@ boxes.forEach((box,index)=>{
 searchButton.addEventListener("click",()=>{
 infoName=headingSearch.value;
 headingSearch.value="";
-info.innerHTML = '';
     i = 0; // Reset the index to 0 for new search results
     j = 8; // Reset the batch size for new search results
 getInto();
@@ -85,7 +93,6 @@ headingSearch.addEventListener("keyup",(e)=>{
 if(e.keyCode===13){
     infoName=headingSearch.value;
     headingSearch.value="";
-    info.innerHTML = '';
     i = 0; // Reset the index to 0 for new search results
     j = 8; // Reset the batch size for new search results
     getInto();
@@ -107,7 +114,6 @@ let item=document.querySelectorAll(".item");
 item.forEach((itemInfo,index)=>{
 itemInfo.addEventListener("click",()=>{
     infoName=itemInfo.innerText;
-    info.innerHTML = '';
     i=0,j=8;
     getInto();
 })
@@ -131,7 +137,6 @@ let item1=document.querySelectorAll(".item1");
 item1.forEach((itemInfo,index)=>{
     itemInfo.addEventListener("click",()=>{
         infoName=itemInfo.innerText;
-        info.innerHTML = '';
         i=0,j=8;
         forAdditional();
         getInto();
