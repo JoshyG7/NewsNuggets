@@ -64,11 +64,11 @@ body{
     font-size: 1vw;
     border-radius: 2vw;
     height: 2.5vw;
-    width: 12vw;
+    width: 19.3vw;
     cursor: pointer;
     position: absolute;
     bottom: 1vw;
-    left: 4vw;
+    left: 0.3vw;
     font-weight: bold;
     background-color: rgb(177, 94, 209);
     color: white;
@@ -81,27 +81,26 @@ body{
 }
 .box h1{
     position: absolute;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     display: inline-block;
     color: white;
-    top: 16.6vw;
+    top: 17vw;
     font-weight: lighter;
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 0.3vw;
 }
 .box p{
-    position: relative;
+    position: absolute;
     font-size: 1.3vw;
-    /* display: inline-block; */
     color: white;
-    /* left: 3vw; */
-    top: 4.5vw;
-    text-align: center;
+    top: 24vw;
+    margin-left: 0.3vw;
 }
 .box img{
     width: 19.7vw;
     height: 17vw;
     border-radius: 1vw;
-    border: solid 2px black;
+    border: solid 0.2vw black;
 }
 .result{
     color: white;
@@ -122,12 +121,12 @@ body{
     top: 4vw;
     width: 91.7vw;
     margin-left: 1vw;  
-    border: 0.7vw solid white;
+    border-top: 0.7vw solid white;
     border-radius: 8px;
     backdrop-filter:  blur(4px);
     background-color: rgba(110, 110, 110, 0.25);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 6);
-    height: 52vw;
+    height: 60vw;
 }
 .information img{
     width: 36vw;
@@ -156,11 +155,11 @@ body{
 .source,.author{
     display: inline-block;
     color: white;
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     font-weight: lighter;
 }
 .author{
-    margin-left: 4vw;
+    margin-left: 2.5vw;
 }
 .title{
     color: rgb(177, 94, 209);
@@ -277,7 +276,7 @@ body{
     color: white;
     background-color: rgb(18, 18, 37);
     border: 1.5px solid black;
-    font-size: 1.7vw;
+    font-size: 1.45vw;
     position: absolute;
     top: 1vw;
     left: 24vw;
