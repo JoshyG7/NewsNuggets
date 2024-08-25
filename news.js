@@ -21,12 +21,15 @@ info.style.visibility = "hidden";
 function showData(){
     info.innerHTML = '';
     for(let i=0;i<d;i++){
-        info.innerHTML+=`<div class="box">
+        info.innerHTML+=`<a href="#heading"><div class="box">
         <img src="${data.articles[i].image}">
         <h1>${data.articles[i].title}</h1><br>
         <p style="color: rgb(177, 94, 209);">Source: ${data.articles[i].source.name}</p>
-        <button>Click for More Info</button>
-        </div>`;    
+        <button>Click for More Info</button></a>
+        </div>`;   
+        if(data.articles[i].title.length>100){
+            
+        } 
     }
 getclick();
 watherImage.style.visibility = "hidden";
@@ -39,7 +42,7 @@ watherImage.style.visibility = "visible";
 result.style.visibility = "hidden";
 info.style.visibility = "hidden";
 try{
-    searchUrl=`https://gnews.io/api/v4/search?q=${infoName}&token=47e0c51ee200bce2ff8b8203cb090099`;
+    searchUrl=`https://gnews.io/api/v4/search?q=${infoName}&token=6d2c278d922f01429e4c0b8ac46bd336`;
     // 6d2c278d922f01429e4c0b8ac46bd336
     // 47e0c51ee200bce2ff8b8203cb090099
     let respone= await fetch(searchUrl);
