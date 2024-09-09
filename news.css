@@ -88,12 +88,13 @@ body{
     font-weight: lighter;
     /* text-align: center; */
     margin-left: 0.3vw;
+    /* text-align: center; */
 }
 .box p{
     position: absolute;
     font-size: 1.3vw;
     color: white;
-    top: 24vw;
+    top: 23vw;
     margin-left: 0.3vw;
 }
 .box img{
